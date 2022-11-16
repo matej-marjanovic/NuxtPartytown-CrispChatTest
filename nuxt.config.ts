@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       script: [
         // Insert your CRISP Script here e.g.:
         {
-          children: `console.log("set crisp"); window.$crisp = []; window.CRISP_WEBSITE_ID = "${process.env.CRISP_WEBSITE_ID}"`,
+          children: `console.log("set crisp"); console.log("${process.env.CRISP_WEBSITE_ID}"); window.$crisp = []; window.CRISP_WEBSITE_ID = "${process.env.CRISP_WEBSITE_ID}"`,
         },
         {
           src: 'https://client.crisp.chat/l.js',
